@@ -5,8 +5,8 @@ $mail = $_POST['correo'];
 $empresa = $_POST['mensaje'];
 
 //Datos del correo
-$para = 'ccampos.geminis@gmail.com';
-$asunto = 'Mensaje de mi sitio web';
+$para = "ccampos.geminis@gmail.com";
+$asunto = "Mensaje de mi sitio web";
 
 //contenido
 $mensaje = "De: $nombre \n";
@@ -15,7 +15,7 @@ $mensaje .= "Mensaje: $empresa";
 
 //envio
 mail($para, $asunto, $mensaje);
-header('Location:../index.html');
+header("Location:../index.html");
 
 //$header = 'From: ' . $mail . " \r\n";
 //$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
