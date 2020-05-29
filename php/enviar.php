@@ -15,7 +15,7 @@ $mensaje .= "Mensaje: $empresa";
 
 //envio
 mail($para, $asunto, $mensaje);
-header("Location:../index.html");
+header("../index.html");
 
 //$header = 'From: ' . $mail . " \r\n";
 //$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
